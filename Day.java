@@ -24,7 +24,7 @@ public class Day
 	static daysWeek day;
 	static int dayN;
 	static daysWeek input = null; 
-	static String day = "";
+	static String dayS = "";
 	public Day()
 	{
 		this.day = daysWeek.MON;
@@ -38,84 +38,84 @@ public class Day
 		switch(day)
 		{
 		case MON:
-			day = "Monday";
+			dayS = "Monday";
 			break;
 		case TUE:
-			day = "Tuesday";
+			dayS = "Tuesday";
 			break;
 		case WED:
-			day = "Wednsday";
+			dayS = "Wednsday";
 			break;
 		case THU:
-			day = "Thursday";
+			dayS = "Thursday";
 			break;
 		case FRI:
-			day =  "Friday";
+			dayS =  "Friday";
 			break;
 		case SAT:
-			day = "Saturday";
+			dayS = "Saturday";
 			break;
 		case SUN:
-			day = "Sunday";
+			dayS = "Sunday";
 			break;
 		}
-		return day;
+		return dayS;
 	}
 	public static String getNextDay()
 	{
 		switch(day)
 		{
 		case MON:
-			day =  "Tuesday";
+			dayS =  "Tuesday";
 			break;
 		case TUE:
-			day =  "Wednsday";
+			dayS =  "Wednsday";
 			break;
 		case WED:
-			day =  "Thursday";
+			dayS =  "Thursday";
 			break;
 		case THU:
-			day =  "Friday";
+			dayS =  "Friday";
 			break;
 		case FRI:
-			day =  "Saturday";
+			dayS =  "Saturday";
 			break;
 		case SAT:
-			day =  "Sunday";
+			dayS =  "Sunday";
 			break;
 		case SUN:
-			day =  "Monday";
+			dayS =  "Monday";
 			break;
 		}
-		return " ";
+		return dayS;
 	}
 	public static String getPreviousDay()
 	{
 		switch(day)
 		{
 		case MON:
-			day =  "Sunday";
+			dayS =  "Sunday";
 			break;
 		case TUE:
-			day = "Monday";
+			dayS = "Monday";
 			break;
 		case WED:
-			day = "Tuesday";
+			dayS = "Tuesday";
 			break;
 		case THU:
-			day =  "Wednsday";
+			dayS =  "Wednsday";
 			break;
 		case FRI:
-			day =  "Thursday";
+			dayS =  "Thursday";
 			break;
 		case SAT:
-			day =  "Friday";
+			dayS =  "Friday";
 			break;
 		case SUN:
-			day =  "Saturday";
+			dayS =  "Saturday";
 			break;
 		}
-		return " ";
+		return dayS;
 	}
 	public static String getDayAt(int add)
 	{
@@ -148,27 +148,27 @@ public class Day
 		switch(dayN)
 		{
 		case 0:
-			return "Monday";
+			dayS = "Monday";
 			break;
 		case 1:
-			return "Tuesday";
+			dayS = "Tuesday";
 			break;
 		case 2:
-			return "Wednsday";
+			dayS = "Wednsday";
 			break;
 		case 3:
-			return "Thursday";
+			dayS = "Thursday";
 			break;
 		case 4:
-			return "Friday";
+			dayS = "Friday";
 			break;
 		case 5:
-			return "Saturday";
+			dayS = "Saturday";
 			break;
 		case 6:
-			return "Sunday";
+			dayS = "Sunday";
 			break;
 		}
-		return " ";
+		return dayS;
 	}
 }
