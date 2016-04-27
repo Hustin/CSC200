@@ -41,6 +41,7 @@ public class JavaFX extends Application
 		
 		
 		primaryStage.setTitle("JavaFX login");
+		
 		GridPane grid = new GridPane();
 		grid.setAlignment(Pos.CENTER);
 		grid.setHgap(10);
@@ -103,7 +104,7 @@ public class JavaFX extends Application
 						do
 						{
 							input = (Account)JOptionPane.showInputDialog(null,"Select a account type", "Account", JOptionPane.INFORMATION_MESSAGE ,null, choices, choices[0]);
-						}while(input != initInput);
+						}while(input != initInput && input != null);
 						
 							while(input != null)
 							{

@@ -176,7 +176,7 @@ public class ArrayGui extends Application
 				
 			}
 		});
-		btnAddToArray.setOnAction(new EventHandler<ActionEvent>()
+		btnOrganize.setOnAction(new EventHandler<ActionEvent>()
 			{
 			@Override
 			public void handle(ActionEvent e) 

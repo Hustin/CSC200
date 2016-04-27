@@ -18,23 +18,20 @@ public class Array
 	
 	public static double [] organize(double [] num)
 	{
-		for(int x = 0; x<10; x++)
+		
+		
+		for(int i = 0; i<num.length -1;i++)
 		{
-			numbers[x] = num[x]; 
-		}
-		double min = num[0];
-		int minInd = 0;
-		int minOldInd = 0;
-		for(int i = 0; i<numbers.length;i++)
-		{
-			if(num[i]<min)
+			for(int j = i+1; j<num.length ;j++)
 			{
-				min = num[i];
-				minInd = i;
-				numbers[minInd]=numbers[minOldInd];
-				numbers[minOldInd] = min;				
+				if(num[i] > num[j])
+				{
+					double g = num[i];
+					num[i] = num[j];
+					num[j] = g;
+				}
 			}
 		}
-		return numbers;
+		return num;
 	}
 }

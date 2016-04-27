@@ -8,7 +8,7 @@ public class CarDriver1
 		Car myCar = null;
 		Car hisCar = null;
 		Car herCar = null;
-		int count = countC.getCount();
+		int count = Car.getCount();
 		String answer = "";
 		
 		Cars[] choices = {Cars.MyCar, Cars.HisCar, Cars.HerCar};
